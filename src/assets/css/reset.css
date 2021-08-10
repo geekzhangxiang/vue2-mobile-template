@@ -1,0 +1,33 @@
+/* *, *:after, *::before {
+  box-sizing: border-box;
+} */
+body, p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ellipsis {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bd-left-1px:before {
+  content: '';
+  border-left: 1px solid #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(.5)
+}

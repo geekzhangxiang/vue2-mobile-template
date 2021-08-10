@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+/*万能浮动清除法*/
+.clearfloat:after {
+    content: "";
+    display: block;
+    overflow:hidden;
+    visibility:hidden;
+    height: 0;
+    clear: both;
+}
+.clearfloat{
+    zoom: 1;
+}
+

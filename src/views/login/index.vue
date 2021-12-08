@@ -4,7 +4,6 @@
       <van-cell-group>
         <van-field
           v-model="username"
-          error
           required
           label="用户名"
           placeholder="请输入用户名"
@@ -14,7 +13,6 @@
           required
           label="手机号"
           placeholder="请输入手机号"
-          error-message="手机号格式错误"
         />
       </van-cell-group>
       <van-button type="info" @click="login">登录</van-button>
@@ -32,8 +30,10 @@ export default {
   },
   methods: {
     login() {
+      console.log("当前代码执行了")
       let token = "adfhigklmnopqrstuvwxyz";
       localStorage.setItem("token", token);
+      this.$router.push("/")
     },
   },
 };
